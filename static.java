@@ -1,22 +1,21 @@
-class StaticBlock
-{
-static int num;
-static String str;
-static
-{
-System.out.println("block 1");
-num=16;
-str="block1";
-}
-static
-{
-System.out.println("block 2");
-num=18;
-str="block2";
-}
-public static void main(String args[])
-{
-System.out.println("num " +num);
-System.out.println("string " +str);
-}
+class StaticEx{
+   static int num;
+   static String mystr;
+   //First Static block
+   static{
+      System.out.println("Static Block 1");
+      num = 68;
+      mystr = "Block1";
+  } 
+  //Second static block
+  static{
+      System.out.println("Static Block 2");
+      num = 98;
+      mystr = "Block2";
+  }
+  public static void main(String args[])
+  {
+      System.out.println("Value of num: "+num);
+      System.out.println("Value of mystr: "+mystr);
+   }
 }
